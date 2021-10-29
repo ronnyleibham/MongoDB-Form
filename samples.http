@@ -1,0 +1,23 @@
+### POST a user
+POST http://localhost:3000/api/client HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Peter",
+    "lastName": "Wichtig",
+    "username": "PeterDerMeter",
+    "password": "sagIchNicht"
+} 
+
+### DELETE a user by username
+DELETE http://localhost:3000/api/client/PeterDerMeter HTTP/1.1
+
+### UPDATE a user by username
+PATCH http://localhost:3000/api/client/update HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "PeterDerMeter",
+    "password": "sagIchNicht",
+    "newPassword": "Wiedermalwasneues"
+} 
